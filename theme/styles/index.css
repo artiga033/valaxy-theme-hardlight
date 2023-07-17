@@ -1,0 +1,36 @@
+@import "vars.css";
+@import "palette.css";
+@import "hardlight.css";
+
+body {
+    background: none;
+    background-color: none;
+}
+
+div.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
+}
+
+#bg-layer {
+    opacity: 0.4;
+    background-color: var(--va-c-bg);
+    z-index: -99;
+}
+
+#bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    background-color: var(--va-c-bg-transparent);
+    border-radius: 2px;
+    -webkit-box-shadow: 1px 1.6px 1px 1.4px rgba(0, 0, 0, .132);
+    box-shadow: 1px 1.6px 1px 1.4px rgba(0, 0, 0, .132);
+}

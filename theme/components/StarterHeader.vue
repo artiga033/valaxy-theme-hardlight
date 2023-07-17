@@ -5,10 +5,10 @@ const siteConfig = useSiteConfig()
 </script>
 
 <template>
-  <div class="pt-6 pb-8 space-y-2 md:space-y-5">
+  <div class="m-y-4 text-center">
     <h1
       class="
-          st-text
+          hg-text
           text-3xl
           leading-9
           font-extrabold
@@ -19,7 +19,7 @@ const siteConfig = useSiteConfig()
     >
       {{ siteConfig.title }}
     </h1>
-    <p class="text-lg leading-7 text-gray-500">
+    <p class="text-lg leading-7 snd-text">
       {{ siteConfig.subtitle }}
     </p>
   </div>

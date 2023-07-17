@@ -13,13 +13,13 @@ function backToTop() {
 </script>
 
 <template>
-  <div class="fixed right-8 bottom-8 hidden flex-col gap-3 md:flex">
+  <div class="fixed right-8 bottom-8 hidden flex-col gap-3 flex">
     <Transition>
       <button
-        v-if="showBackToTop" class="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
-        @click="backToTop"
+        v-if="showBackToTop" aria-label="Back to Top"
+        class="card p-2 transition-all hover:bg-gray-300 dark:hover:bg-gray-600" @click="backToTop"
       >
-        <div i-ri-arrow-up-line />
+        <div i-fluent:arrow-up-24-regular />
       </button>
     </Transition>
   </div>

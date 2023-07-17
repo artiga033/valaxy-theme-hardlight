@@ -23,33 +23,38 @@ const footerIcon = computed(() => themeConfig.value.footer.icon!)
 </script>
 
 <template>
-  <footer class="va-footer p-4" text="center sm" style="color:var(--va-c-text-light)">
-    <div v-if="themeConfig.footer.beian?.enable && themeConfig.footer.beian.icp" class="beian" m="y-2">
-      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">
-        {{ themeConfig.footer.beian.icp }}
-      </a>
+  <footer text="center sm" style="color:var(--va-c-text-light)">
+    <div class="card">
+      <p v-if="themeConfig.footer.beian?.enable && themeConfig.footer.beian.icp" class="beian" m="y-2">
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">
+          {{ themeConfig.footer.beian.icp }}
+        </a>
+      </p>
+      <p class="copyright flex justify-center items-center p1">
+        <span>
+          &copy;
+          <template v-if="!isThisYear">
+            {{ themeConfig.footer.since }} -
+          </template>
+          {{ year }}
+        </span>
+
+        <a m="x-2" class="inline-flex animate-pulse" :href="footerIcon.url" target="_blank" :title="footerIcon.title">
+          <div :class="footerIcon.name" />
+        </a>
+
+        <span>{{ siteConfig.author.name }}</span>
+      </p>
+
+      <div v-if="themeConfig.footer.powered" class="powered p1">
+        <span v-html="poweredHtml" /> | <span>{{ t('footer.theme') }} - <a
+          :href="themeConfig.pkg.homepage"
+          :title="`valaxy-theme-${config.theme}`" target="_blank"
+        >{{ capitalize(config.theme) }}</a> v{{
+          themeConfig.pkg.version }}</span>
+      </div>
+
+      <slot />
     </div>
-
-    <div class="copyright flex justify-center items-center" p="1">
-      <span>
-        &copy;
-        <template v-if="!isThisYear">
-          {{ themeConfig.footer.since }} -
-        </template>
-        {{ year }}
-      </span>
-
-      <a m="x-2" class="inline-flex animate-pulse" :href="footerIcon.url" target="_blank" :title="footerIcon.title">
-        <div :class="footerIcon.name" />
-      </a>
-
-      <span>{{ siteConfig.author.name }}</span>
-    </div>
-
-    <div v-if="themeConfig.footer.powered" class="powered" m="2">
-      <span v-html="poweredHtml" /> | <span>{{ t('footer.theme') }} - <a :href="themeConfig.pkg.homepage" :title="`valaxy-theme-${config.theme}`" target="_blank">{{ capitalize(config.theme) }}</a> v{{ themeConfig.pkg.version }}</span>
-    </div>
-
-    <slot />
   </footer>
 </template>

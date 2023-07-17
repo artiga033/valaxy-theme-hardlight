@@ -16,10 +16,10 @@ const posts = computed(() => props.posts || routes.value)
 </script>
 
 <template>
-  <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+  <ul>
     <template v-for="post in posts" :key="post.path">
       <Transition name="fade">
-        <li class="py-12">
+        <li class="m-y-4">
           <StarterArticleCard :post="post" />
         </li>
       </Transition>

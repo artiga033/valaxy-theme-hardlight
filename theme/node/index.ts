@@ -9,7 +9,9 @@ export const defaultThemeConfig: ThemeConfig = {
   colors: {
     primary: '#0078E7',
   },
-
+  background: {
+    image: null,
+  },
   footer: {
     since: 2022,
     icon: {

@@ -36,44 +36,15 @@ const prevPost = computed(() => posts.value[findCurrentIndex() + 1])
       </h1>
     </header>
 
-    <div
-      class="
-        divide-y
-        xl:divide-y-0
-        divide-gray-200 dark:divide-gray-700
-        xl:grid xl:grid-cols-4 xl:gap-x-10
-        pb-16
-        xl:pb-20
-      "
-      style="grid-template-rows: auto 1fr"
-    >
-      <StarterAuthor v-if="frontmatter.author" :frontmatter="frontmatter" />
-      <div class="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
+    <div class="">
+      <div class="card">
         <router-view />
       </div>
 
-      <footer
-        class="
-          text-sm
-          font-medium
-          leading-5
-          divide-y divide-gray-200 dark:divide-gray-700
-          xl:col-start-1 xl:row-start-2
-        "
-      >
-        <div v-if="nextPost && nextPost.path" class="py-8">
-          <h2 class="text-xs tracking-wide uppercase text-gray-500">
-            Next Article
-          </h2>
-          <div class="link">
-            <router-link :to="nextPost.path">
-              {{ nextPost.title }}
-            </router-link>
-          </div>
-        </div>
-        <div v-if="prevPost && prevPost.path" class="py-8">
-          <h2 class="text-xs tracking-wide uppercase text-gray-500">
-            Previous Article
+      <footer class="m-y-2 text-sm font-medium leading-5 flex justify-between">
+        <div v-if="prevPost && prevPost.path">
+          <h2 class="text-xs tracking-wide uppercase text-[var(--va-c-primary-light)]">
+            &lt;Previous Article
           </h2>
           <div class="link">
             <router-link :to="prevPost.path">
@@ -81,10 +52,15 @@ const prevPost = computed(() => posts.value[findCurrentIndex() + 1])
             </router-link>
           </div>
         </div>
-        <div class="pt-8">
-          <router-link class="link" to="/">
-            ← Back to the blog
-          </router-link>
+        <div v-if="nextPost && nextPost.path">
+          <h2 class="text-xs tracking-wide uppercase text-[var(--va-c-primary-light)]">
+            Next Article&gt;
+          </h2>
+          <div class="link">
+            <router-link :to="nextPost.path">
+              {{ nextPost.title }}
+            </router-link>
+          </div>
         </div>
       </footer>
     </div>

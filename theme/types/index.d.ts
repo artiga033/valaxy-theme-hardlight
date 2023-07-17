@@ -14,7 +14,9 @@ export interface ThemeConfig {
      */
     primary: string
   }
-
+  background: {
+    image: string | null
+  }
   /**
    * footer
    */

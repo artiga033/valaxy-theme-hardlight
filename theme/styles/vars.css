@@ -1,0 +1,31 @@
+/* variable definations */
+html {
+    --va-c-bg: #fff;
+    --va-c-bg-transparent: #ffffff54;
+    --va-c-bg-stroken: #c4c4c4;
+    --va-c-decor-1: #00ccff;
+    --va-c-decor-2: #ffd7d5;
+    --va-c-effect-1: #85e6f6;
+    --va-c-fore-1: #202a4d;
+    --va-c-fore-2: #330000;
+    --va-c-effect-2: #daf3fa;
+    --va-netural-gray: #a3a3a3;
+    --va-c-bg-selection: #037a9854;
+    --va-c-text-light: #3b3b3b;
+    --va-c-text-lighter: #6e6eaa;
+}
+
+html.dark {
+    --va-c-bg: #000;
+    --va-c-bg-transparent: #00000054;
+    --va-c-bg-stroken: #2a2a2a;
+    --va-c-decor-1: #105ca3;
+    --va-c-decor-2: #9f4a9c;
+    --va-c-effect-1: #2b8dbe;
+    --va-c-effect-2: #204787;
+    --va-c-fore-1: #b5f4fd;
+    --va-c-fore-2: #f7caac;
+    --va-c-bg-selection: #e5ebf177;
+    --va-c-text-light: #cccccc;
+    --va-c-text-lighter: #b2b2b2;
+}

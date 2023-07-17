@@ -11,13 +11,13 @@ tags:
 ## Hello, Valaxy!
 
 ```ts
-import type { ThemeConfig } from 'valaxy-theme-starter'
+import type { ThemeConfig } from 'valaxy-theme-hardlight'
 import { defineConfig } from 'valaxy'
 
 export default defineConfig<ThemeConfig>({
   // your theme name
   // valaxy-theme-yun name is 'yun'
-  theme: 'starter',
+  theme: 'hardlight',
 
   themeConfig: {
     banner: {

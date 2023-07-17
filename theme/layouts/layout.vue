@@ -1,10 +1,19 @@
-<template>
-  <div class="antialiased">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
-      <StarterNav />
-    </div>
+<script setup>
+import { useThemeConfig } from '../composables'
 
-    <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+const themeConfig = useThemeConfig()
+</script>
+
+<template>
+  <div id="bg-layer" class="bg" />
+  <div
+    id="bg-img" class="bg"
+    :style="{ backgroundImage: themeConfig.background.image === null ? `linear-gradient(to bottom, var(--va-c-bg-stroken),var(--va-netural-gray))` : `url(${themeConfig.background.image})` }"
+  />
+  <div class="antialiased">
+    <StarterNav class="md:sticky z-10 top-0 w-screen h-4rem" />
+    <!-- <PersonInfo class="fixed right-0" /> -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 ">
       <slot>
         <router-view v-slot="{ Component }">
           <component :is="Component">
@@ -43,7 +52,7 @@
 
     <StarterHelper />
 
-    <StarterFooter>
+    <StarterFooter class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
       <slot name="footer" />
     </StarterFooter>
   </div>
