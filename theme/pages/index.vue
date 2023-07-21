@@ -1,5 +1,5 @@
 <template>
-  <StarterPostList />
+  <HardlightPostList />
 </template>
 
 <route lang="yaml">

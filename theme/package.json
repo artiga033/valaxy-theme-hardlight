@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "packageManager": "pnpm@7.5.0",
   "author": {
-    "email": "me@yunyoujun.cn",
-    "name": "YunYouJun",
-    "url": "https://www.yunyoujun.cn"
+    "email": "artiga033@hotmail.com",
+    "name": "artiga033",
+    "url": "https://a33.su"
   },
-    "homepage": "https://github.com/artiga033/valaxy-theme-hardlight",
+  "homepage": "https://github.com/artiga033/valaxy-theme-hardlight",
   "repository": {
     "type": "git",
     "url": "https://github.com/artiga033/valaxy-theme-hardlight"
@@ -20,7 +20,7 @@
   "main": "client/index.ts",
   "types": "types/index.d.ts",
   "dependencies": {
-    "@iconify-json/fluent":"^1.1.27"
+    "@iconify-json/fluent": "^1.1.27"
   },
   "devDependencies": {
     "valaxy": "^0.14.28"

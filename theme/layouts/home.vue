@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="divide-y divide-gray-200 dark:divide-gray-700">
-      <StarterHeader />
+      <HardlightHeader />
 
       <slot>
         <router-view />

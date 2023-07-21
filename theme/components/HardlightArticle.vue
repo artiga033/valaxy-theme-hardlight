@@ -20,7 +20,7 @@ const prevPost = computed(() => posts.value[findCurrentIndex() + 1])
 <template>
   <article class="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
     <header class="pt-6 xl:pb-10 space-y-1 text-center">
-      <StarterDate :date="frontmatter.date" />
+      <HardlightDate :date="frontmatter.date" />
       <h1
         class="
           st-text

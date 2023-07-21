@@ -11,7 +11,7 @@ const themeConfig = useThemeConfig()
     :style="{ backgroundImage: themeConfig.background.image === null ? `linear-gradient(to bottom, var(--va-c-bg-stroken),var(--va-netural-gray))` : `url(${themeConfig.background.image})` }"
   />
   <div class="antialiased">
-    <StarterNav class="md:sticky z-10 top-0 w-screen h-4rem" />
+    <HardlightNav class="md:sticky z-10 top-0 w-screen h-4rem" />
     <!-- <PersonInfo class="fixed right-0" /> -->
     <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 ">
       <slot>
@@ -50,10 +50,10 @@ const themeConfig = useThemeConfig()
       </slot>
     </main>
 
-    <StarterHelper />
+    <HardlightHelper />
 
-    <StarterFooter class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+    <HardlightFooter class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
       <slot name="footer" />
-    </StarterFooter>
+    </HardlightFooter>
   </div>
 </template>

@@ -17,6 +17,14 @@ export default defineConfig<ThemeConfig>({
     },
     nav: [
       {
+        text: 'Tags',
+        link: '/tags',
+      },
+      {
+        text: 'Links',
+        link: '/links',
+      },
+      {
         text: 'GitHub',
         link: 'https://github.com/artiga033/valaxy-theme-hardlight',
       },
@@ -35,7 +43,7 @@ export default defineConfig<ThemeConfig>({
     ],
 
     footer: {
-      since: 2016,
+      since: 2023,
     },
   },
 })

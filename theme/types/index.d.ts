@@ -1,4 +1,6 @@
-export namespace StarterTheme {
+import { PageFrontMatter } from "valaxy/types"
+
+export namespace HardlightTheme {
   export type Config = ThemeConfig
   export type Sidebar = any
 }
@@ -73,3 +75,15 @@ export interface NavItem {
 }
 
 export type ThemeUserConfig = Partial<ThemeConfig>
+
+export interface FriendsPageFrontMatter extends PageFrontMatter {
+  friends: Partial<Friend>[]
+}
+export interface Friend {
+  name: string
+  desc: string
+  url: string
+  avatar: string
+  backgroundColor: string
+  textColor: string
+}

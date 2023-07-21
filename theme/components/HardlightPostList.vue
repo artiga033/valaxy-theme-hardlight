@@ -20,7 +20,7 @@ const posts = computed(() => props.posts || routes.value)
     <template v-for="post in posts" :key="post.path">
       <Transition name="fade">
         <li class="m-y-4">
-          <StarterArticleCard :post="post" />
+          <HardlightArticleCard :post="post" />
         </li>
       </Transition>
     </template>

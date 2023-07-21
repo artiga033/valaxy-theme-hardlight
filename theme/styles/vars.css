@@ -2,7 +2,7 @@
 html {
     --va-c-bg: #fff;
     --va-c-bg-transparent: #ffffff54;
-    --va-c-bg-stroken: #c4c4c4;
+    --va-c-bg-stroken: #ffffffaa;
     --va-c-decor-1: #00ccff;
     --va-c-decor-2: #ffd7d5;
     --va-c-effect-1: #85e6f6;
@@ -18,7 +18,7 @@ html {
 html.dark {
     --va-c-bg: #000;
     --va-c-bg-transparent: #00000054;
-    --va-c-bg-stroken: #2a2a2a;
+    --va-c-bg-stroken: #000000aa;
     --va-c-decor-1: #105ca3;
     --va-c-decor-2: #9f4a9c;
     --va-c-effect-1: #2b8dbe;

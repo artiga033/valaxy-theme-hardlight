@@ -1,5 +1,5 @@
 <template>
   <Layout>
-    <StarterArticle />
+    <HardlightArticle />
   </Layout>
 </template>
