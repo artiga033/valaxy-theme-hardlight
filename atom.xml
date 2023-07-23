@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/artiga033/valaxy-theme-hardlight/</id>
+    <title>Valaxy Theme Hardlight</title>
+    <updated>2023-07-23T05:16:05.995Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>artiga033</name>
+        <email>i@valaxy.site</email>
+        <uri>https://valaxy.site</uri>
+    </author>
+    <link rel="alternate" href="https://github.com/artiga033/valaxy-theme-hardlight/"/>
+    <link rel="self" href="https://github.com/artiga033/valaxy-theme-hardlight/feed.atom"/>
+    <subtitle>Valaxy Theme Hardlight Preview.</subtitle>
+    <logo>https://s.a33.su/avatar.png</logo>
+    <icon>https://github.com/artiga033/valaxy-theme-hardlight/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2023 © artiga033</rights>
+    <entry>
+        <title type="html"><![CDATA[hardlight-test]]></title>
+        <id>https://github.com/artiga033/valaxy-theme-hardlight/posts/hardlight</id>
+        <link href="https://github.com/artiga033/valaxy-theme-hardlight/posts/hardlight"/>
+        <updated>2023-07-19T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>Test if the cover is displayed properly</p>
+]]></content>
+        <author>
+            <name>artiga033</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2023-07-23T05:15:24.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[i18n]]></title>
+        <id>https://github.com/artiga033/valaxy-theme-hardlight/posts/i18n</id>
+        <link href="https://github.com/artiga033/valaxy-theme-hardlight/posts/i18n"/>
+        <updated>2022-04-09T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>::: tip</p>
+<p>You can click this button to toggle locales.</p>
+<p>:::</p>
+<div class="text-center">
+  <!-- <YunTo]]></content>
+        <author>
+            <name>artiga033</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2023-07-23T05:15:24.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Valaxy Test 文章内容测试]]></title>
+        <id>https://github.com/artiga033/valaxy-theme-hardlight/posts/test</id>
+        <link href="https://github.com/artiga033/valaxy-theme-hardlight/posts/test"/>
+        <updated>2022-03-23T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>::: zh-CN</p>
+<p>[[toc]]</p>
+<p>标题是一级标题</p>
+<h2>二级标题 {lang=&quot;zh-CN&quot;}</h2>
+<h3>三级标题 {lang=&quot;zh-CN&quot;}</h3>
+<h4>四级标题 {lang=&quot;zh-C</h4>
+]]></content>
+        <author>
+            <name>artiga033</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2023-07-23T05:15:24.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://github.com/artiga033/valaxy-theme-hardlight/posts/hello-valaxy</id>
+        <link href="https://github.com/artiga033/valaxy-theme-hardlight/posts/hello-valaxy"/>
+        <updated>2022-03-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>Hello, Valaxy!</h2>
+<pre><code class="language-ts">import type { ThemeConfig } from 'valaxy-theme-hardlight'
+import { defineC</code></pre>
+]]></content>
+        <author>
+            <name>artiga033</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-03-23T00:00:00.000Z</published>
+    </entry>
+</feed>

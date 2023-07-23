@@ -1,0 +1,62 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Valaxy Theme Hardlight",
+    "home_page_url": "https://github.com/artiga033/valaxy-theme-hardlight/",
+    "feed_url": "https://github.com/artiga033/valaxy-theme-hardlight/feed.json",
+    "description": "Valaxy Theme Hardlight Preview.",
+    "icon": "https://s.a33.su/avatar.png",
+    "author": {
+        "name": "artiga033",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<p>Test if the cover is displayed properly</p>\n",
+            "url": "https://github.com/artiga033/valaxy-theme-hardlight/posts/hardlight",
+            "title": "hardlight-test",
+            "date_modified": "2023-07-19T00:00:00.000Z",
+            "date_published": "2023-07-23T05:15:24.000Z",
+            "author": {
+                "name": "artiga033",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>::: tip</p>\n<p>You can click this button to toggle locales.</p>\n<p>:::</p>\n<div class=\"text-center\">\n  <!-- <YunTo",
+            "url": "https://github.com/artiga033/valaxy-theme-hardlight/posts/i18n",
+            "title": "i18n",
+            "date_modified": "2022-04-09T00:00:00.000Z",
+            "date_published": "2023-07-23T05:15:24.000Z",
+            "author": {
+                "name": "artiga033",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>::: zh-CN</p>\n<p>[[toc]]</p>\n<p>标题是一级标题</p>\n<h2>二级标题 {lang=&quot;zh-CN&quot;}</h2>\n<h3>三级标题 {lang=&quot;zh-CN&quot;}</h3>\n<h4>四级标题 {lang=&quot;zh-C</h4>\n",
+            "url": "https://github.com/artiga033/valaxy-theme-hardlight/posts/test",
+            "title": "Valaxy Test 文章内容测试",
+            "date_modified": "2022-03-23T00:00:00.000Z",
+            "date_published": "2023-07-23T05:15:24.000Z",
+            "author": {
+                "name": "artiga033",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>Hello, Valaxy!</h2>\n<pre><code class=\"language-ts\">import type { ThemeConfig } from 'valaxy-theme-hardlight'\nimport { defineC</code></pre>\n",
+            "url": "https://github.com/artiga033/valaxy-theme-hardlight/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2022-03-22T00:00:00.000Z",
+            "date_published": "2022-03-23T00:00:00.000Z",
+            "author": {
+                "name": "artiga033",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}
