@@ -12,6 +12,9 @@ const themeConfig = useThemeConfig()
   />
   <div class="antialiased">
     <HardlightNav class="md:sticky z-10 top-0 w-screen h-4rem" />
+    <header>
+      <slot name="page-header" />
+    </header>
     <!-- <PersonInfo class="fixed right-0" /> -->
     <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 ">
       <slot>

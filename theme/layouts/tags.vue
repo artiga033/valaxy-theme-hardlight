@@ -37,18 +37,19 @@ const title = usePostTitle(frontmatter)
 
 <template>
   <Layout>
-    <h1 class="m-y-8 text-center text-4xl leading-9 font-extrabold tracking-tight">
-      {{ title }}
-    </h1>
-    <div class="b-solid p-4 b-2px b-[var(--va-c-bg-transparent)] shadow-lg flex items-end">
-      <div
-        v-for="[tag, meta] in [...tags.entries()].sort((a, b) => a[1].count - b[1].count).reverse()" :key="tag"
+    <template #page-header>
+      <HardlightHeader :title="title" />
+    </template>
+    <div class="b-solid gap-1 p-4 b-2px b-[var(--va-c-bg-transparent)] shadow-lg flex flex-wrap items-end">
+      <span
+        v-for="[tag, meta] in [...tags.entries()].sort((a, b) => a[1].count - b[1].count).reverse()"
+        :key="tag"
+        class="card m-y-1 cursor-pointer transition-ease duration-.5s hover:bg-[var(--va-c-bg-stroken)]"
+        :style="getTagStyle(meta.count)"
         @click="() => router.push({ query: { tag } })"
       >
-        <span class="card cursor-pointer transition-ease duration-.5s hover:bg-[var(--va-c-bg-stroken)]" :style="getTagStyle(meta.count)">
-          #{{ tag }}(<u> {{ meta.count }}</u>)
-        </span>
-      </div>
+        #{{ tag }}(<u> {{ meta.count }}</u>)
+      </span>
     </div>
     <div class="card">
       <ul>

@@ -66,10 +66,9 @@ ul.expanded::before {
 ul.expanded li {
   margin: 0 auto;
   width: 100%;
-  padding: 0.5rem 0;
-  font-size: xx-large;
+  padding: .5em 0 .5em 2em;
+  font-size: x-large;
   display: block;
-  text-align: center;
 }
 
 ul.expanded li:hover {

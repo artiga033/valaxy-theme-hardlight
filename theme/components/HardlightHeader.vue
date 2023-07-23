@@ -1,26 +1,23 @@
 <script lang="ts" setup>
-import { useSiteConfig } from 'valaxy'
-
-const siteConfig = useSiteConfig()
+const props = defineProps<{ title?: string; subtitle?: string }>()
 </script>
 
 <template>
-  <div class="m-y-4 text-center">
+  <div class="text-center">
     <h1
       class="
           hg-text
-          text-3xl
-          leading-9
+          text-6
           font-extrabold
           tracking-tight
-          sm:text-4xl sm:leading-10
-          md:text-6xl md:leading-14
+          md:text-7
+          xl:text-8
         "
     >
-      {{ siteConfig.title }}
+      {{ props.title }}
     </h1>
-    <p class="text-lg leading-7 snd-text">
-      {{ siteConfig.subtitle }}
+    <p v-if="props.subtitle" class="text-3 md:text-4 xl:text-5 snd-text">
+      {{ props.subtitle }}
     </p>
   </div>
 </template>

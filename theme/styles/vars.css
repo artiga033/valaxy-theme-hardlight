@@ -9,10 +9,11 @@ html {
     --va-c-fore-1: #202a4d;
     --va-c-fore-2: #330000;
     --va-c-effect-2: #daf3fa;
-    --va-netural-gray: #a3a3a3;
+    --va-netural-gray: #a0a0aa;
     --va-c-bg-selection: #037a9854;
     --va-c-text-light: #3b3b3b;
     --va-c-text-lighter: #6e6eaa;
+    --va-c-text-stroken: #50596c;
 }
 
 html.dark {
@@ -28,4 +29,5 @@ html.dark {
     --va-c-bg-selection: #e5ebf177;
     --va-c-text-light: #cccccc;
     --va-c-text-lighter: #b2b2b2;
+    --va-c-text-stroken: #f9f9f9;
 }

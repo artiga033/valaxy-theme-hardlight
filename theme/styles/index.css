@@ -34,3 +34,8 @@ div.bg {
     -webkit-box-shadow: 1px 1.6px 1px 1.4px rgba(0, 0, 0, .132);
     box-shadow: 1px 1.6px 1px 1.4px rgba(0, 0, 0, .132);
 }
+.cardf {
+    border-radius: 2px;
+    -webkit-box-shadow: 1px 1.6px 1px 1.4px rgba(0, 0, 0, .132);
+    box-shadow: 1px 1.6px 1px 1.4px rgba(0, 0, 0, .132);
+}
