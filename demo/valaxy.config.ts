@@ -33,10 +33,6 @@ export default defineConfig<ThemeConfig>({
         link: '/atom.xml',
       },
       {
-        text: 'Discord',
-        link: 'https://discord.gg/sGe4U4p4CK',
-      },
-      {
         text: 'Valaxy →',
         link: 'https://github.com/YunYouJun/valaxy',
       },
